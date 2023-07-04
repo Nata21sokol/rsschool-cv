@@ -1,1 +1,1 @@
-https://github.com/Nata21sokol/rsschool-cv/blob/gh-pages/cv.md
+https://Nata21sokol.github.io/rsschool-cv/
