@@ -33,3 +33,293 @@ p {
   margin: 0;
   padding: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #676464;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/*шрифты*/
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+    url('../fonts2/Montserrat-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+    url('../fonts/Montserrat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Light.woff2') format('woff2'),
+    url('../fonts/Montserrat-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+.wripper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 140px;
+}
+
+/* header */
+
+.header {
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(103, 100, 100, 1));
+}
+
+.header__nav {
+  margin: 0 auto;
+  padding: 30px 140px 31px 140px;
+}
+
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 55px;
+}
+
+.header__link {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39px;
+  color: #ED0064;
+  transition: color 0.4s ease;
+}
+
+.header__link:hover {
+  color: #9B0041;
+}
+
+.header__link:focus {
+  color: #9B0041;
+}
+
+/* hero */
+
+.section__hero {
+  padding: 120px 0 60px 0;
+}
+
+.section__wripper {
+  display: flex;
+  align-items: center;
+}
+
+.hero__info {
+  max-width: 810px;
+  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__title {
+  margin-bottom: 25px;
+  font-size: 64px;
+  line-height: 78px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.hero__par {
+  margin-bottom: 25px;
+  font-size: 40px;
+  line-height: 49px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.hero__text {
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.hero__avatar {
+  border-radius: 50px;
+}
+
+/* section-info */
+
+.section__info {
+  padding: 60px 0;
+}
+
+.info__card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info__item {
+  max-width: 793px;
+  margin-bottom: 55px;
+  flex: 1 1 40%;
+}
+
+.info__item:not(:nth-child(2n)) {
+  margin-right: 55px;
+}
+
+.info__wripper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 55px;
+  padding: 10px 0;
+  border-radius: 20px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(237, 0, 100, 1));
+}
+
+.info__logo {
+  padding: 0 25px;
+}
+
+.info__title {
+  font-size: 48px;
+  line-height: 59px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.list-column {
+  columns: 2;
+  column-gap: 120px;
+}
+
+.info__items {
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: 400;
+  color: #FFFFFF;
+  list-style: inside;
+}
+
+.list-style>.info__items {
+  list-style: none;
+}
+
+.info__link {
+  display: flex;
+  align-items: center;
+}
+
+.info__link svg path {
+  transition: fill 0.4s ease;
+}
+
+.info__link:hover svg path {
+  fill: #ED0064;
+}
+
+.info__par {
+  padding: 0 5px;
+  color: #FFFFFF;
+}
+
+.info__title-par, .info__text-code {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 39px;
+  color: #FFFFFF;
+}
+
+.items-img {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info__list-contacts {
+  display: flex;
+  padding: 25px 0;
+  justify-content: space-around;
+}
+
+.social__link svg path {
+  line-height: 0;
+  transition: fill 0.4s ease;
+}
+
+.social__link:hover svg path {
+  fill: #ED0064;
+}
+
+.info__link-tel, .info__link-email {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+/* footer */
+
+.footer__top {
+  padding: 25px 0;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(237, 0, 100, 1));
+}
+
+.top__img {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.footer__bottom {
+  padding: 5px 0;
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(103, 100, 100, 1));
+}
+
+.bottom__link, .bottom__text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  color: #9B0041;
+}
